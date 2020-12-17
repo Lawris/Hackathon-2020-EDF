@@ -23,14 +23,22 @@ function render() {
         <body>
           <h1>Hello world</h1>
           <div id="headerConvo">
-            <div>
-
+            <div id="emetteur">
+                id EMETTEUR = 7565
+                FRAU
+                AXEL
+                CEX
+                Priorité faible
             </div>
-            <div>
-                
+            <div id="infosConv">
+                <button>Telecharger</button>
             </div>
-            <div>
-                
+            <div id="recepteur">
+                id RECEPTEUR = 75675
+                FIGARELLI
+                Lisa
+                CCO
+                Priorité faible
             </div>
           </div>
           <div id="convo">
