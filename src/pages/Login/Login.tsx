@@ -10,7 +10,7 @@ export default class Login extends React.Component<LoginProps, LoginState>{
     constructor(props: LoginProps){
         super(props);
         this.state = {
-            userEmail: '',
+            userMatricule: '',
             userPassword: '',
         }
     }
