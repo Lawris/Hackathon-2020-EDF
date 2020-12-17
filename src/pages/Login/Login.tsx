@@ -15,7 +15,11 @@ export default class Login extends React.Component<LoginProps, LoginState>{
         }
     }
     render(){
-        return <div>Hello</div>
+        return <div id="login">
+            <input type="text" id="matricule" name="matricule" value="Matricule" required/>
+            <input type="text" id="password" name="password" value="Entrer le mot de passe" required/>
+            <button>Connexion</button>
+        </div>
     }
 
 }
