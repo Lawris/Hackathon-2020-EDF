@@ -5,7 +5,7 @@ import React from "react";
 import ReactDOMServer from "react-dom/server";
 
 function render() {
-    let html = ReactDOMServer.renderToStaticMarkup(<HelloWorldPage />);
+    let html = ReactDOMServer.renderToStaticMarkup(<LoginPage />);
     let htmlWDoc = "<!DOCTYPE html>" + html;
     let prettyHtml = prettier.format(htmlWDoc, { parser: "html" });
     let outputFile = "./output.html";
@@ -13,7 +13,7 @@ function render() {
     console.log(`Wrote ${outputFile}`);
   }
   
-  function HelloWorldPage() {
+  function LoginPage() {
     return (
       <html lang="en">
         <head>
