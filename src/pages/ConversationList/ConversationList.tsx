@@ -1,4 +1,6 @@
+import { Divider, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import React, {Component} from 'react';
+import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
 
 interface ListState {
     [key: string]: any;
@@ -7,6 +9,18 @@ interface ListState {
 interface ListProps {
     
 }
+
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      width: '100%',
+      maxWidth: 360,
+      backgroundColor: theme.palette.background.paper,
+    },
+  }),
+);
+const classes = useStyles();
 
 export default class ConversationList extends React.Component<ListProps, ListState>{
     constructor(props: ListProps){
@@ -17,11 +31,31 @@ export default class ConversationList extends React.Component<ListProps, ListSta
         }
     }
     render(){
-        return <div id="login">
-            <input type="text" id="matricule" name="matricule" value="Matricule" required/>
-            <input type="text" id="password" name="password" value="Entrer le mot de passe" required/>
-            <button>Connexion</button>
-        </div>
+        return <div className={classes.root}>
+        <List component="nav" aria-label="main mailbox folders">
+          <ListItem button>
+            <ListItemIcon>
+              <InboxIcon />
+            </ListItemIcon>
+            <ListItemText primary="Inbox" />
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon>
+              <DraftsIcon />
+            </ListItemIcon>
+            <ListItemText primary="Drafts" />
+          </ListItem>
+        </List>
+        <Divider />
+        <List component="nav" aria-label="secondary mailbox folders">
+          <ListItem button>
+            <ListItemText primary="Trash" />
+          </ListItem>
+          <ListItemLink href="#simple-list">
+            <ListItemText primary="Spam" />
+          </ListItemLink>
+        </List>
+      </div>
     }
 
 }
