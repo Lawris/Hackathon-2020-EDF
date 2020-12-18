@@ -1,16 +1,29 @@
 import { Button, Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel } from '@material-ui/core';
 import React, {Component} from 'react';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
-import imgcorse from '../../../public/assets/img-corse-map.png'
+import imgcorse from './img-corse-map.png'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       display: 'flex',
+      position: 'absolute',
+        top: '17%',
+        left: '20%',
     },
     formControl: {
       margin: theme.spacing(3),
     },
+    imgmap:{
+        position: 'absolute',
+        right: '20%',
+        top: '17%',
+    },
+    buttonZone:{
+        position: 'absolute',
+        left: '30%',
+        bottom: '25%',
+    }
   }),
 );
 
@@ -18,7 +31,7 @@ export default function Zone (){
   const classes = useStyles();
   return( 
         <div>
-            <img src={imgcorse} alt="iage map corse"/>
+            <img className={classes.imgmap} src={imgcorse} alt="image map corse"/>
             <div className={classes.root}>
                 <FormControl component="fieldset" className={classes.formControl}>
                     <FormLabel component="legend">Sélectionner la ou les zone(s) d'intervention</FormLabel>
@@ -57,9 +70,9 @@ export default function Zone (){
                 </FormControl>
             </div>
           <br/><br/>
-          <Button variant="contained" color="primary" href="#contained-buttons">
+          <Button className={classes.buttonZone} variant="contained" color="primary" href="#contained-buttons">
             Confirmer
-          </Button><br/><br/>
+          </Button>
         </div>
   )
 }
