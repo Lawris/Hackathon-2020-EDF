@@ -21,7 +21,7 @@ const useStyles = makeStyles({
         color: "#000000",
     },
     title:{
-
+        margin: "0 4%",
     }
   });
 
@@ -43,6 +43,8 @@ const Main: React.FunctionComponent<MainProps> = (props) => {
                     <Typography variant="h6" className={classes.title}>
                         EDF Messages Télétransmis
                     </Typography>
+                    {/* <Typography variant="h6" className={classes.title}>CCO - U12345 - John Filippi</Typography> */}
+                    <Typography variant="h6" className={classes.title}>CEX - U67890 - Olivier Tavera</Typography>
                 </Toolbar>
             </AppBar>
             <div>

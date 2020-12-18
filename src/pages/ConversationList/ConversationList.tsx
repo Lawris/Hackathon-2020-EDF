@@ -2,6 +2,7 @@ import { Divider, List, ListItem, ListItemIcon, ListItemText } from '@material-u
 import React, {Component} from 'react';
 import './ConversationList.css'
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 import MailIcon from '@material-ui/icons/Mail';
 import DraftsIcon from '@material-ui/icons/Drafts';
 
@@ -38,10 +39,39 @@ class ConvList extends React.Component {
                     </List>
                 </div>
                 <div className={display1Class}>
-                    <h1>DISPLAY 1</h1>
+                    <div className="Messages">
+                        <div className='Message1'>
+                            <p>Je te demande la mise en RNE du Départ 25 LUCCIANA du Poste Source CERVIONE</p>
+                        </div>
+                        <div className='Message2'>
+                            <p>Je te demande la mise en RNE du Départ 25 LUCCIANA du Poste Source CERVIONE</p>
+                            <p className="confirmed-message">message confirmé</p>
+                        </div>
+                    </div>
                 </div>
                 <div className={display2Class}>
-                    <h1>DISPLAY 2</h1>
+                    <div className="Messages">
+                        <div className='Message1'>
+                            <p>Je te demande la mise en RESEAU du Départ 16MONTE ainsi que de la MC CASAMOZZA 2 du Poste Source LUCCIANA selon NITST n°20.crs.4369.A</p>
+                        </div>
+                        <div className='Message2'>
+                            <p>Je te demande la mise en RESEAU du Départ 10MONTE  ainsi que de la MC CASAMOZZA 2 du Poste Source LUCCIANA</p>
+                            <p className="confirmed-message">message édité</p>
+                        </div>
+                        <div className='Message3'>
+                            <p>Je te demande la mise en RESEAU du Départ 10MONTE  ainsi que de la MC CASAMOZZA 2 du Poste Source LUCCIANA</p>
+                        </div>
+                        <div className='Message4'>
+                            <p>Je te demande la mise en RESEAU du Départ 10MONTE  ainsi que de la MC CASAMOZZA 2 du Poste Source LUCCIANA</p>
+                            <p className="confirmed-message">message confirmé</p>
+                        </div>
+                        <div className='Message5'>
+                            <p>Je te demande la mise en RESEAU du Départ 10MONTE  ainsi que de la MC CASAMOZZA 2 du Poste Source LUCCIANA</p>
+                            <Button className="validation-button" variant="contained" color="primary">
+                                Confirmer
+                            </Button>
+                        </div>
+                    </div>
                 </div>
             </div>
         );

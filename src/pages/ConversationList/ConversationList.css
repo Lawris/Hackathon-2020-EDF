@@ -9,3 +9,90 @@
 .displayNone{
     display: none
 }
+
+.Messages{
+    border: solid black;
+    display: flex;
+    position: absolute;
+    width: 73%;
+    height: 91%;
+    left: 27%;
+    top: 8%;
+}
+
+.Message1{
+    background-color: rgb(101, 216, 126);    /* background-color:rgb(101, 120, 216); */
+    display: flex;
+    /* border: solid black; */
+    position: absolute;
+    left: 4%;
+    width: 30%;
+    top: 5%;
+    padding: 20px;
+    border-radius: 25px;
+
+}
+.Message2{
+    /* background-color:rgb(101, 120, 216); */
+    /* background-color: lightgray; */
+    background-color: rgb(101, 216, 126);
+    display: block;
+    /* border: solid black; */
+    position: absolute;
+    right: 4%;
+    width: 30%;
+    top: 15%;
+    padding: 20px;
+    border-radius: 25px;
+}
+.Message3{
+    background-color: rgb(101, 216, 136);
+    /* background-color: lightgray; */
+    display: block;
+    /* border: solid black; */
+    position: absolute;
+    left: 4%;
+    width: 30%;
+    top: 30%;
+    padding: 20px;
+    border-radius: 25px;
+
+}
+.Message4{
+    background-color:rgb(101, 120, 216);
+    /* background-color: lightgray; */
+    display: block;
+    /* border: solid black; */
+    position: absolute;
+    right: 4%;
+    width: 30%;
+    top: 50%;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.Message5{
+    /* background-color: rgb(101, 216, 136); */
+    background-color: lightgray;
+    display: block;
+    /* border: solid black; */
+    position: absolute;
+    left: 4%;
+    width: 30%;
+    top: 55%;
+    padding: 20px;
+    border-radius: 25px;
+
+}
+
+.validation-button{
+    margin-right: 24% !important;
+    margin-left: 5% !important;
+}
+
+.confirmed-message{
+    color: grey;
+    display: flex;
+    position: absolute;
+    margin-top: 8%;
+}
