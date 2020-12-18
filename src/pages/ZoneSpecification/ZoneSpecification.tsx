@@ -23,17 +23,9 @@ const useStyles = makeStyles((theme: Theme) =>
 
 
 
-export default class Zone extends React.Component<ZoneProps, ZoneState>{
-    constructor(props: ZoneProps){
-        super(props);
-        this.state = {
-            userMatricule: '',
-            userPassword: '',
-        }
-        const classes = useStyles();   
-    }
-    render(){
-        return <div>
+export default function Zone (){
+  const classes = useStyles();
+  return( <div>
           <div className={classes.root}>
           <FormControl component="fieldset" className={classes.formControl}>
             <FormLabel component="legend">Sélectionner la ou les zone(s) d'intervention</FormLabel>
@@ -76,6 +68,5 @@ export default class Zone extends React.Component<ZoneProps, ZoneState>{
             Confirmer
           </Button><br/><br/>
         </div>
-    }
-
+  )
 }
