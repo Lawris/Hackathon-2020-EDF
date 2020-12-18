@@ -12,8 +12,12 @@ import ConversationList from '../ConversationList/ConversationList';
 import Zone from '../ZoneSpecification/ZoneSpecification';
 
 const useStyles = makeStyles({
-    root: {
-      width: 500,
+    wrapper:{
+        width: 500,
+        backgroundColor: "#3f51b5",
+    },
+    label:{
+        color: "#000000",
     },
   });
 
@@ -52,9 +56,9 @@ const Main: React.FunctionComponent<MainProps> = (props) => {
                     setValue(newValue);
                 }}
                 showLabels
-                className={classes.root}>
+                className={classes.wrapper}>
                 <BottomNavigationAction label="Zones" icon={<LocationOnIcon />} href="/app/zone"/>
-                <BottomNavigationAction label="Conversations" icon={<MessageIcon href="/app/conversationlist" />} />
+                <BottomNavigationAction label="Conversations" icon={<MessageIcon />} href="/app/conversationlist" />
                 <BottomNavigationAction label="Paramètres" icon={<SettingsIcon />} href="/app/settings" />
             </BottomNavigation>
         </div>

@@ -19,36 +19,36 @@ export default function Zone (){
           <div className={classes.root}>
           <FormControl component="fieldset" className={classes.formControl}>
             <FormLabel component="legend">Sélectionner la ou les zone(s) d'intervention</FormLabel>
-              <FormGroup aria-label="position" row>
+              <FormGroup>
                 <FormControlLabel
                   value="BOGB"
                   control={<Checkbox color="primary" />}
-                  label="BOGB"
-                /><br/><br/>
+                  label="BOGB - Grand Bastia"
+                />
                 <FormControlLabel
                   value="BOCPO"
                   control={<Checkbox color="primary" />}
-                  label="BOCPO"
+                  label="BOCPO - Corte/Ghisonaccia"
                 />
                 <FormControlLabel
                   value="BOBA"
                   control={<Checkbox color="primary" />}
-                  label="BOBA"
+                  label="BOBA - Balagne"
                 />
                 <FormControlLabel
                   value="BOES"
                   control={<Checkbox color="primary" />}
-                  label="BOES"
+                  label="BOES - Extrême Sud"
                 />
                 <FormControlLabel
                   value="BOVA"
                   control={<Checkbox color="primary" />}
-                  label="BOVA"
+                  label="BOVA - Valincu"
                 />
                 <FormControlLabel
                   value="BOGA"
                   control={<Checkbox color="primary" />}
-                  label="BOGA"
+                  label="BOGA - Grand Ajaccio"
                 />
               </FormGroup>
           </FormControl>
