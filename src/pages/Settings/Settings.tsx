@@ -1,22 +1,28 @@
+import { Divider, List, ListItem, ListItemText } from '@material-ui/core';
 import React, {Component} from 'react';
+import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
 
-interface SettingsState {
-    [key: string]: any;
-}
 
-interface SettingsProps {}
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      width: '100%',
+      maxWidth: 360,
+      backgroundColor: theme.palette.background.paper,
+    },
+  }),
+);
 
-export default class Settings extends React.Component<SettingsProps, SettingsState>{
-    constructor(props: SettingsProps){
-        super(props);
-        this.state = {
-            userMatricule: '',
-            userPassword: '',
-        }
-    }
-    render(){
-        return <div> Hello Settings
+export default function Settings (){
+  const classes = useStyles();
+  return( <div> 
+          <Divider />
+      <List component="nav" aria-label="secondary mailbox folders">
+        <ListItem button>
+          <ListItemText primary="Trash" />
+        </ListItem>
+      </List>
         </div>
-    }
+  );
 
 }

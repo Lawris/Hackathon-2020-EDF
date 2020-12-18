@@ -1,0 +1,55 @@
+.background-login {
+    /*background-image: url(https://storage.lebonguide.com/crop-1600x700/7/94/565CF6F3-EA3E-48DB-B255-668E5856CCEB.png);*/
+    background-color: blue no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.img-login {
+    filter: blur(2px);
+    margin-top: 2%;
+    margin-left: -5px;
+}
+
+.login-form{
+    padding: 2%;
+    background-color: white;
+    left: 31%;
+    position: absolute;
+    display: block;
+    top: 42%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 40%;
+    border: solid;
+}
+
+.title-login{
+    background-color: white;
+    left: 33%;
+    position: absolute;
+    display: block;
+    top: 20%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 40%;
+    border: solid;
+}
+
+.title-login h2{
+    display: table !important;
+    margin: auto !important;
+}
+
+.input-login{
+    display: table !important;
+    margin: auto !important;
+}
+
+.button-login{
+    display: table !important;
+    margin: auto !important;
+}
