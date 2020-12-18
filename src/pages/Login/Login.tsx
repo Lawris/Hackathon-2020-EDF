@@ -1,3 +1,4 @@
+import { Button, TextField } from '@material-ui/core';
 import React, {Component} from 'react';
 import { withRouter } from 'react-router-dom';
 import LoginProps from '../../Model/LoginProps';
@@ -15,10 +16,10 @@ export default class Login extends React.Component<LoginProps, LoginState>{
         }
     }
     render(){
-        return <div id="login">
-            <input type="text" id="matricule" name="matricule" value="Matricule" required/>
-            <input type="text" id="password" name="password" value="Entrer le mot de passe" required/>
-            <button>Connexion</button>
+        return <div>
+            <TextField id="outlined-basic" label="Matricule" variant="outlined" required/><br/>
+            <TextField id="outlined-basic" label="Password" variant="outlined" required/><br/><br/>
+            <Button variant="contained" color="primary" href="/app">Connexion</Button>
         </div>
     }
 

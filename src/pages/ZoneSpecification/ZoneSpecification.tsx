@@ -2,14 +2,6 @@ import { Button, Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel }
 import React, {Component} from 'react';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 
-interface ZoneState {
-    [key: string]: any;
-}
-
-interface ZoneProps {
-    
-}
-
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -20,8 +12,6 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   }),
 );
-
-
 
 export default function Zone (){
   const classes = useStyles();
@@ -34,7 +24,7 @@ export default function Zone (){
                   value="BOGB"
                   control={<Checkbox color="primary" />}
                   label="BOGB"
-                />
+                /><br/><br/>
                 <FormControlLabel
                   value="BOCPO"
                   control={<Checkbox color="primary" />}
