@@ -15,14 +15,15 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export default function Settings (){
   const classes = useStyles();
-  return( <div> 
-          <Divider />
+  return( 
+    <div> 
+    <Divider />
       <List component="nav" aria-label="secondary mailbox folders">
         <ListItem button>
           <ListItemText primary="Trash" />
         </ListItem>
       </List>
-        </div>
+    </div>
   );
 
 }
