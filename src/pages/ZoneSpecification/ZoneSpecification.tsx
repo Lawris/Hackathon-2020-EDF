@@ -70,7 +70,7 @@ export default function Zone (){
                 </FormControl>
             </div>
           <br/><br/>
-          <Button className={classes.buttonZone} variant="contained" color="primary" href="#contained-buttons">
+          <Button className={classes.buttonZone} variant="contained" color="primary" href="/app/conversationlist">
             Confirmer
           </Button>
         </div>
